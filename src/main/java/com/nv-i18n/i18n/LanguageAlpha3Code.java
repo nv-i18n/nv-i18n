@@ -163,7 +163,6 @@ import java.util.regex.Pattern;
  * </p>
  *
  * @since 1.1
- * @author Takahiko Kawasaki
  */
 public enum LanguageAlpha3Code
 {

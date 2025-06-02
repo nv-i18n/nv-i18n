@@ -66,7 +66,6 @@ import java.util.Locale;
  * list = LocaleCode.{@link #getByCountry(CountryCode) getByCountry}({@link CountryCode#CH});
  * </pre>
  *
- * @author Takahiko Kawasaki
  */
 public enum LocaleCode
 {

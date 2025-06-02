@@ -41,7 +41,6 @@ import java.util.regex.Pattern;
  *
  * @see <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>
  *
- * @author Takahiko Kawasaki
  */
 public enum CurrencyCode
 {

@@ -103,7 +103,6 @@ import java.util.regex.Pattern;
  * code = CountryCode.{@link #getByCode(String) getByCode}(<span style="color: darkred;">"ANHH"</span>);
  * </pre>
  *
- * @author Takahiko Kawasaki
  */
 public enum CountryCode
 {

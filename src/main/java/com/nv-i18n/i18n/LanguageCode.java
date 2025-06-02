@@ -60,7 +60,6 @@ import java.util.regex.Pattern;
  * List&lt;LanguageCode&gt; list = LanguageCode.{@link #findByName(String) findByName}(<span style="color: darkred;">".*nese"</span>);
  * </pre>
  *
- * @author Takahiko Kawasaki
  */
 public enum LanguageCode
 {

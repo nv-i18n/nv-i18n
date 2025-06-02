@@ -21,7 +21,7 @@
  * --></pre>
  *
  * @version 1.29
- * @author Takahiko Kawasaki
+ * @author Contributors to nv-i18n
  */
 package com.nv-i18n.i18n;
 
