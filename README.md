@@ -55,13 +55,13 @@ OSGi
 Source Code
 -----------
 
-  <code>https://github.com/TakahikoKawasaki/nv-i18n.git</code>
+  <code>https://github.com/nv-i18n/nv-i18n.git</code>
 
 
 JavaDoc
 -------
 
-  <code>http://TakahikoKawasaki.github.io/nv-i18n/</code>
+  <code>http://nv-i18n.github.io/nv-i18n/</code>
 
 
 Example
@@ -107,7 +107,7 @@ for (CurrencyCode code : CurrencyCode.values())
 See Also
 --------
 
-* [nv-i18n @ GitHub](https://github.com/TakahikoKawasaki/nv-i18n)
+* [nv-i18n @ GitHub](https://github.com/nv-i18n/nv-i18n)
 * Country Code [ISO 3166-1](http://en.wikipedia.org/wiki/ISO_3166-1)
 * Country Code [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
 * Country Code [ISO 3166-1 alpha-3](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)
@@ -128,10 +128,4 @@ TODO
 Note
 ----
 
-This nv-i18n supersedes https://github.com/TakahikoKawasaki/CountryCode
-
-
-Author
-------
-
-Takahiko Kawasaki, [Authlete, Inc.](https://www.authlete.com/)
+This nv-i18n supersedes https://github.com/TakahikoKawasaki/nv-i18n and https://github.com/TakahikoKawasaki/CountryCode
