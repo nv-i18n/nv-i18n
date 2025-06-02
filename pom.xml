@@ -17,12 +17,6 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <name>Takahiko Kawasaki</name>
-        </developer>
-    </developers>
-
     <scm>
         <connection>scm:git:git@github.com:nv-i18n/nv-i18n.git</connection>
         <developerConnection>scm:git:git@github.com:nv-i18n/nv-i18n.git</developerConnection>
