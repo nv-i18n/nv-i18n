@@ -3,7 +3,7 @@
  *
  * <p>
  * Source code is hosted at
- * <a href="https://github.com/TakahikoKawasaki/nv-i18n">GitHub</a>.
+ * <a href="https://github.com/nv-i18n/nv-i18n">GitHub</a>.
  * </p>
  *
  * <p>
@@ -14,7 +14,7 @@
  * </style>
  * <pre style="margin: 1em; padding: 0.5em; border: solid 1px black;">
  * <span class="tag">&lt;dependency&gt;
- *     &lt;groupId&gt;</span>com.neovisionaries<span class="tag">&lt;/groupId&gt;
+ *     &lt;groupId&gt;</span>com.nv-i18n<span class="tag">&lt;/groupId&gt;
  *     &lt;artifactId&gt;</span>nv-i18n<span class="tag">&lt;/artifactId&gt;
  *     &lt;version&gt;</span>1.29<span class="tag">&lt;/version&gt;
  * &lt;/dependency&gt;</span><!--
@@ -23,5 +23,5 @@
  * @version 1.29
  * @author Takahiko Kawasaki
  */
-package com.neovisionaries.i18n;
+package com.nv-i18n.i18n;
 

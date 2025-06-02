@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.neovisionaries.i18n;
+package com.nv-i18n.i18n;
 
 
-import static com.neovisionaries.i18n.LocaleCode.getByCode;
-import static com.neovisionaries.i18n.LocaleCode.getByCountry;
-import static com.neovisionaries.i18n.LocaleCode.getByLanguage;
-import static com.neovisionaries.i18n.LocaleCode.getByLocale;
+import static com.nv-i18n.i18n.LocaleCode.getByCode;
+import static com.nv-i18n.i18n.LocaleCode.getByCountry;
+import static com.nv-i18n.i18n.LocaleCode.getByLanguage;
+import static com.nv-i18n.i18n.LocaleCode.getByLocale;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
