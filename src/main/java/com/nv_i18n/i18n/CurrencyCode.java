@@ -1708,12 +1708,27 @@ public enum CurrencyCode
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Sierra_Leonean_leone">Leone</a>
+     * [numeric code = 925, minor unit = 2]
+     *
+     * <p>Used by:</p>
+     * <ul>
+     *     <li>{@link CountryCode#SL SL}: SIERRA LEONE
+     * </ul>
+     */
+    SLE("Leone", 925, 2),
+
+    /**
+     * <a href="http://en.wikipedia.org/wiki/Sierra_Leonean_leone">Leone</a>
      * [numeric code = 694, minor unit = 2]
      *
      * <p>Used by:</p>
      * <ul>
      * <li>{@link CountryCode#SL SL}: SIERRA LEONE
      * </ul>
+     *
+     * @see #SLE
+     *
+     * @deprecated
      */
     SLL("Leone", 694, 2, CountryCode.SL),
 
@@ -2017,6 +2032,8 @@ public enum CurrencyCode
      * <ul>
      * <li>{@link CountryCode#US US}: UNITED STATES
      * </ul>
+     *
+     * @deprecated
      */
     USS("US Dollar (Same day)", 998, 2, CountryCode.US)
     {
