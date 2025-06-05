@@ -11,12 +11,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.nv-i18n.i18n;
+package com.nv_i18n.i18n;
 
 
-import static com.nv-i18n.i18n.CountryCode.getByCode;
-import static com.nv-i18n.i18n.CountryCode.getByCodeIgnoreCase;
-import static com.nv-i18n.i18n.CountryCode.getByLocale;
+import static com.nv_i18n.i18n.CountryCode.getByCode;
+import static com.nv_i18n.i18n.CountryCode.getByCodeIgnoreCase;
+import static com.nv_i18n.i18n.CountryCode.getByLocale;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;

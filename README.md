@@ -28,8 +28,8 @@ Maven
 
 ```xml
 <dependency>
-    <groupId>com.nv-i18n</groupId>
-    <artifactId>nv-i18n</artifactId>
+    <groupId>com.nv_i18n</groupId>
+    <artifactId>nv_i18n</artifactId>
     <version>1.29</version>
 </dependency>
 ```
@@ -40,7 +40,7 @@ Gradle
 
 ```gradle
 dependencies {
-    compile 'com.nv-i18n:nv-i18n:1.28'
+    compile 'com.nv_i18n:nv-i18n:1.28'
 }
 ```
 
@@ -48,8 +48,8 @@ dependencies {
 OSGi
 ----
 
-    Bundle-SymbolicName: com.nv-i18n.i18n
-    Export-Package: com.nv-i18n.i18n;version="1.28.0"
+    Bundle-SymbolicName: com.nv_i18n.i18n
+    Export-Package: com.nv_i18n.i18n;version="1.28.0"
 
 
 Source Code

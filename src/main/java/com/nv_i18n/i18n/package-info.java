@@ -23,5 +23,5 @@
  * @version 1.29
  * @author Contributors to nv-i18n
  */
-package com.nv-i18n.i18n;
+package com.nv_i18n.i18n;
 
