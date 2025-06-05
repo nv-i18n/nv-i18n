@@ -29,7 +29,7 @@ Maven
 ```xml
 <dependency>
     <groupId>com.nv_i18n</groupId>
-    <artifactId>nv_i18n</artifactId>
+    <artifactId>nv-i18n</artifactId>
     <version>1.29</version>
 </dependency>
 ```
