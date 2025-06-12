@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.neovisionaries.i18n;
+package com.nv_i18n.i18n;
 
 
 import java.util.ArrayList;
@@ -27,7 +27,6 @@ import java.util.regex.Pattern;
  * <a href="http://en.wikipedia.org/wiki/ISO_15924">ISO 15924<a> script code.
  *
  * @since 1.2
- * @author Takahiko Kawasaki
  */
 public enum ScriptCode
 {

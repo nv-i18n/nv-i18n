@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.neovisionaries.i18n;
+package com.nv_i18n.i18n;
 
 
 import java.lang.reflect.Field;
@@ -68,7 +68,6 @@ import java.util.Locale;
  * list = LocaleCode.{@link #getByCountry(CountryCode) getByCountry}({@link CountryCode#CH});
  * </pre>
  *
- * @author Takahiko Kawasaki
  */
 public enum LocaleCode
 {

@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.neovisionaries.i18n;
+package com.nv_i18n.i18n;
 
 
-import static com.neovisionaries.i18n.LanguageAlpha3Code.getByCode;
-import static com.neovisionaries.i18n.LanguageAlpha3Code.Usage.BIBLIOGRAPHY;
-import static com.neovisionaries.i18n.LanguageAlpha3Code.Usage.COMMON;
-import static com.neovisionaries.i18n.LanguageAlpha3Code.Usage.TERMINOLOGY;
+import static com.nv_i18n.i18n.LanguageAlpha3Code.getByCode;
+import static com.nv_i18n.i18n.LanguageAlpha3Code.Usage.BIBLIOGRAPHY;
+import static com.nv_i18n.i18n.LanguageAlpha3Code.Usage.COMMON;
+import static com.nv_i18n.i18n.LanguageAlpha3Code.Usage.TERMINOLOGY;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;

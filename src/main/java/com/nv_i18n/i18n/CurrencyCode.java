@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.neovisionaries.i18n;
+package com.nv_i18n.i18n;
 
 
 import java.util.ArrayList;
@@ -43,7 +43,6 @@ import java.util.regex.Pattern;
  *
  * @see <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>
  *
- * @author Takahiko Kawasaki
  */
 public enum CurrencyCode
 {
