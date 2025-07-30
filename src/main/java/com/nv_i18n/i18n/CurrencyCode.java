@@ -693,6 +693,7 @@ public enum CurrencyCode
      * <li>{@link CountryCode#GF GF}: FRENCH GUIANA
      * <li>{@link CountryCode#GP GP}: GUADELOUPE
      * <li>{@link CountryCode#GR GR}: GREECE
+     * <li>{@link CountryCode#HR HR}: CROATIA
      * <li>{@link CountryCode#IE IE}: IRELAND
      * <li>{@link CountryCode#IT IT}: ITALY
      * <li>{@link CountryCode#LT LT}: LITHUANIA
@@ -720,12 +721,13 @@ public enum CurrencyCode
         CountryCode.AD, CountryCode.AT, CountryCode.AX, CountryCode.BE,
         CountryCode.BL, CountryCode.CY, CountryCode.DE, CountryCode.EE,
         CountryCode.ES, CountryCode.EU, CountryCode.FI, CountryCode.FR,
-        CountryCode.GF, CountryCode.GP, CountryCode.GR, CountryCode.IE,
-        CountryCode.IT, CountryCode.LT, CountryCode.LU, CountryCode.LV,
-        CountryCode.MC, CountryCode.ME, CountryCode.MF, CountryCode.MQ,
-        CountryCode.MT, CountryCode.NL, CountryCode.PM, CountryCode.PT,
-        CountryCode.RE, CountryCode.SI, CountryCode.SK, CountryCode.SM,
-        CountryCode.TF, CountryCode.VA, CountryCode.XK, CountryCode.YT),
+        CountryCode.GF, CountryCode.GP, CountryCode.GR, CountryCode.HR,
+        CountryCode.IE, CountryCode.IT, CountryCode.LT, CountryCode.LU,
+        CountryCode.LV, CountryCode.MC, CountryCode.ME, CountryCode.MF,
+        CountryCode.MQ, CountryCode.MT, CountryCode.NL, CountryCode.PM,
+        CountryCode.PT, CountryCode.RE, CountryCode.SI, CountryCode.SK,
+        CountryCode.SM, CountryCode.TF, CountryCode.VA, CountryCode.XK,
+        CountryCode.YT),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Fiji_dollar">Fiji Dollar</a>
@@ -2082,7 +2084,11 @@ public enum CurrencyCode
      * <li>{@link CountryCode#UY UY}: URUGUAY</li>
      * </ul>
      */
-    UYW("Unidad previsional", 927, 4, CountryCode.UY),
+    UYW("Unidad previsional", 927, 4, CountryCode.UY)
+    {
+        @Override
+        public boolean isFund() { return true; }
+    },
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Uzbekistan_som">Uzbekistan Sum</a>
@@ -2104,7 +2110,7 @@ public enum CurrencyCode
      * <li>{@link CountryCode#VE VE}: VENEZUELA, BOLIVARIAN REPUBLIC OF</li>
      * </ul>
      */
-    VED("Venezuelan digital bolívar", 926, 2, CountryCode.VE),
+    VED("Bolívar Soberano", 926, 2, CountryCode.VE),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Venezuelan_bol%C3%ADvar">Bolivar</a>
