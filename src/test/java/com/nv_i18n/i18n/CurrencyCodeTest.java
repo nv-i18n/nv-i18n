@@ -105,6 +105,7 @@ public class CurrencyCodeTest
         assertTrue(CurrencyCode.USN.isFund());
         assertTrue(CurrencyCode.USS.isFund());
         assertTrue(CurrencyCode.UYI.isFund());
+        assertTrue(CurrencyCode.XAD.isFund());
     }
 
 
