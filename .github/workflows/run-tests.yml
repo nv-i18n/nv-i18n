@@ -1,0 +1,47 @@
+name: Run Tests
+
+on:
+  # Allow manual triggering of the workflow
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        include:
+          - java-version: 8
+            display-name: JDK8
+          - java-version: 11
+            display-name: JDK11
+          - java-version: 17
+            display-name: JDK17
+          - java-version: 21
+            display-name: JDK21
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: ${{ matrix.java-version }}
+
+    - name: Cache Maven dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ matrix.java-version }}-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-${{ matrix.java-version }}-
+
+    - name: Run tests (${{ matrix.display-name }})
+      run: mvn test
