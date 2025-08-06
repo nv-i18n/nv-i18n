@@ -38,7 +38,7 @@ If you then still feel the need to ask a question and need clarification, we rec
 
 - Open a [Discussion](https://github.com/nv-i18n/nv-i18n/discussions/new/choose).
 - Provide as much context as you can about what you're running into.
-- Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
+- Provide project and platform versions (JVM, etc), depending on what seems relevant.
 
 We will then participate in the discussion as soon as possible.
 
