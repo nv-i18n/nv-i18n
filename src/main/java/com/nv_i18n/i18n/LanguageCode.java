@@ -63,6 +63,7 @@ import java.util.regex.Pattern;
  * </pre>
  *
  */
+@SuppressWarnings("unused")
 public enum LanguageCode
 {
     /**
@@ -281,7 +282,11 @@ public enum LanguageCode
     /**
      * <a href="http://en.wikipedia.org/wiki/Bihari_languages">Bihari</a>
      * ({@link LanguageAlpha3Code#bih bih}).
+     *
+     * @deprecated Since 2.0; Bihari is not a single language but a group of languages.
      */
+    @Deprecated
+    @SuppressWarnings("DeprecatedIsStillUsed")
     bh()
     {
         @Override
@@ -2528,7 +2533,7 @@ public enum LanguageCode
     ;
 
 
-    private LanguageCode()
+    LanguageCode()
     {
     }
 
@@ -2766,6 +2771,7 @@ public enum LanguageCode
      *
      * @since 1.1
      */
+    @SuppressWarnings("JavadocDeclaration")
     public LanguageAlpha3Code getAlpha3()
     {
         return null;
@@ -2937,7 +2943,8 @@ public enum LanguageCode
         // Locale.getLanguage() returns a lowercase ISO 639 code.
         String language = locale.getLanguage();
 
-        if (language == null || language.length() == 0)
+        //noinspection ConstantValue
+        if (language == null || language.isEmpty())
         {
             return LanguageCode.undefined;
         }
@@ -2975,7 +2982,7 @@ public enum LanguageCode
      */
     static String canonicalize(String code, boolean caseSensitive)
     {
-        if (code == null || code.length() == 0)
+        if (code == null || code.isEmpty())
         {
             return null;
         }
@@ -3094,7 +3101,7 @@ public enum LanguageCode
             throw new IllegalArgumentException("pattern is null.");
         }
 
-        List<LanguageCode> list = new ArrayList<LanguageCode>();
+        List<LanguageCode> list = new ArrayList<>();
 
         for (LanguageCode entry : values())
         {

@@ -166,6 +166,7 @@ import java.util.regex.Pattern;
  *
  * @since 1.1
  */
+@SuppressWarnings("unused")
 public enum LanguageAlpha3Code
 {
     /**
@@ -764,16 +765,8 @@ public enum LanguageAlpha3Code
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Bihari_languages">Bihari</a>
-     * ({@link LanguageCode#bh bh}).
      */
-    bih("Bihari languages")
-    {
-        @Override
-        public LanguageCode getAlpha2()
-        {
-            return LanguageCode.bh;
-        }
-    },
+    bih("Bihari languages"),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Bikol_language">Bikol</a>
@@ -1218,6 +1211,13 @@ public enum LanguageAlpha3Code
      * @since 1.10
      */
     cmc("Chamic languages"),
+
+    /**
+     * <a href="http://en.wikipedia.org/wiki/Montenegrin_language">Montenegrin</a>
+     *
+     * @since 2.0
+     */
+    cnr("Montenegrin"),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Coptic_language">Coptic</a>
@@ -2262,6 +2262,7 @@ public enum LanguageAlpha3Code
      * ;</a>
      * ({@link LanguageCode#gn gn}).
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     grn("Guaran\u00ED")
     {
         @Override
@@ -2296,6 +2297,7 @@ public enum LanguageAlpha3Code
      *
      * @since 1.10
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     gwi("Gwich\u02BCin"),
 
     /**
@@ -3461,6 +3463,7 @@ public enum LanguageAlpha3Code
      *
      * @see #mri
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     mao("M\u0101ori")
     {
         @Override
@@ -3706,6 +3709,7 @@ public enum LanguageAlpha3Code
      *
      * @see #mao
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     mri("M\u0101ori")
     {
         @Override
@@ -4046,6 +4050,7 @@ public enum LanguageAlpha3Code
      * Bokm&aring;l</a>
      * ({@link LanguageCode#nb nb}).
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     nob("Norwegian Bokm\u00E5l")
     {
         @Override
@@ -4073,6 +4078,7 @@ public enum LanguageAlpha3Code
      * <a href="http://en.wikipedia.org/wiki/Norwegian_language">Norwegian</a>
      * ({@link LanguageCode#no no}).
      */
+    @SuppressWarnings("deprecation")
     nor("Norwegian")
     {
         @Override
@@ -4369,6 +4375,7 @@ public enum LanguageAlpha3Code
      * <a href="http://en.wikipedia.org/wiki/P%C4%81li_language">P&#257;li</a>
      * ({@link LanguageCode#pi pi}).
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     pli("P\u0101li")
     {
         @Override
@@ -4444,6 +4451,7 @@ public enum LanguageAlpha3Code
      *
      * @since 1.10
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     pro("Old Proven\u00E7al"),
 
     /**
@@ -5669,6 +5677,7 @@ public enum LanguageAlpha3Code
      * <a href="http://en.wikipedia.org/wiki/Volap%C3%BCk">Volap&uuml;k</a>
      * ({@link LanguageCode#vo vo}).
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     vol("Volap\u00FCk")
     {
         @Override
@@ -5878,6 +5887,11 @@ public enum LanguageAlpha3Code
     zen("Zenaga"),
 
     /**
+     * <a href="https://en.wikipedia.org/wiki/Standard_Moroccan_Amazigh">Standard Moroccan Tamazight</a>
+     */
+    zgh("Standard Moroccan Tamazight"),
+
+    /**
      * <a href="http://en.wikipedia.org/wiki/Zhuang_languages">Zhuang</a>
      * ({@link LanguageCode#za za}).
      */
@@ -6012,7 +6026,7 @@ public enum LanguageAlpha3Code
          * bibliographic applications.
          */
         COMMON
-    };
+    }
 
 
     /**
@@ -6021,7 +6035,7 @@ public enum LanguageAlpha3Code
     private final String name;
 
 
-    private LanguageAlpha3Code(String name)
+    LanguageAlpha3Code(String name)
     {
         this.name = name;
     }
@@ -6305,11 +6319,12 @@ public enum LanguageAlpha3Code
 
     private static String canonicalize(String code, boolean caseSensitive)
     {
-        if (code == null || code.length() == 0)
+        if (code == null || code.isEmpty())
         {
             return null;
         }
 
+        //noinspection PointlessBooleanExpression
         if (caseSensitive == false)
         {
             code = code.toLowerCase();
@@ -6406,7 +6421,7 @@ public enum LanguageAlpha3Code
             throw new IllegalArgumentException("pattern is null.");
         }
 
-        List<LanguageAlpha3Code> list = new ArrayList<LanguageAlpha3Code>();
+        List<LanguageAlpha3Code> list = new ArrayList<>();
 
         for (LanguageAlpha3Code entry : values())
         {

@@ -46,6 +46,11 @@ public enum ScriptCode
     Undefined(-1, "Undefined"),
 
     /**
+     * Adlam [166]
+     */
+    Adlm(166, "Adlam"),
+
+    /**
      * Afaka [439]
      */
     Afak(439, "Afaka"),
@@ -56,6 +61,10 @@ public enum ScriptCode
      */
     Aghb(239, "Caucasian Albanian"),
 
+    /**
+     * Ahom [338]
+     */
+    Ahom(338, "Ahom"),
 
     /**
      * Arabic [160]
@@ -203,6 +212,8 @@ public enum ScriptCode
 
     /**
      * Cyrillic [221]
+     *
+     * @deprecated {@link #Cyrl}
      */
     Cyrs(221, "Cyrillic"),
 
@@ -212,6 +223,10 @@ public enum ScriptCode
      */
     Deva(315, "Devanagari"),
 
+    /**
+     * Dogra [328]
+     */
+    Dogr(328, "Dogra"),
 
     /**
      * Deseret [250]
@@ -228,19 +243,19 @@ public enum ScriptCode
     /**
      * Egyptian demotic [070]
      */
-    Egyd(070, "Egyptian demotic"),
+    Egyd(70, "Egyptian demotic"),
 
 
     /**
      * Egyptian hieratic [060]
      */
-    Egyh(060, "Egyptian hieratic"),
+    Egyh(60, "Egyptian hieratic"),
 
 
     /**
      * Egyptian hieroglyphs [050]
      */
-    Egyp(050, "Egyptian hieroglyphs"),
+    Egyp(50, "Egyptian hieroglyphs"),
 
 
     /**
@@ -248,6 +263,10 @@ public enum ScriptCode
      */
     Elba(226, "Elbasan"),
 
+    /**
+     * Elymaic [117]
+     */
+    Elym(117, "Elymaic"),
 
     /**
      * Ethiopic [430]
@@ -272,6 +291,10 @@ public enum ScriptCode
      */
     Glag(225, "Glagolitic"),
 
+    /**
+     * Masaram Gondi [312]
+     */
+    Gonm(312, "Masaram Gondi"),
 
     /**
      * Gothic [206]
@@ -298,10 +321,19 @@ public enum ScriptCode
 
 
     /**
+     * Gunjala Gondi [322]
+     */
+    Gunj(322, "Gunjala Gondi"),
+
+    /**
      * Gurmukhi [310]
      */
     Guru(310, "Gurmukhi"),
 
+    /**
+     * Han with Bopomofo [503]
+     */
+    Hanb(503, "Han with Bopomofo"),
 
     /**
      * Hangul [286]
@@ -332,6 +364,10 @@ public enum ScriptCode
      */
     Hant(502, "Han"),
 
+    /**
+     * Hatran [127]
+     */
+    Hatr(127, "Hatran"),
 
     /**
      * Hebrew [125]
@@ -467,6 +503,8 @@ public enum ScriptCode
 
     /**
      * Latin [217]
+     *
+     * @deprecated {@link #Latn}
      */
     Latf(217, "Latin"),
 
@@ -536,6 +574,10 @@ public enum ScriptCode
      */
     Mahj(314, "Mahajani"),
 
+    /**
+     * Makasar [366]
+     */
+    Maka(366, "Makasar"),
 
     /**
      * Mandaic, Mandaean [140]
@@ -548,12 +590,20 @@ public enum ScriptCode
      */
     Mani(139, "Manichaean"),
 
+    /**
+     * Marchen [332]
+     */
+    Marc(332, "Marchen"),
 
     /**
      * Mayan hieroglyphs [090]
      */
     Maya(90, "Mayan hieroglyphs"),
 
+    /**
+     * Medefaidrin [265]
+     */
+    Medf(265, "Medefaidrin"),
 
     /**
      * Mende [438]
@@ -578,6 +628,10 @@ public enum ScriptCode
      */
     Mlym(347, "Malayalam"),
 
+    /**
+     * Modi [324]
+     */
+    Modi(324, "Modi"),
 
     /**
      * Moon [218]
@@ -608,6 +662,10 @@ public enum ScriptCode
      */
     Mymr(350, "Myanmar"),
 
+    /**
+     * Multani [209]
+     */
+    Mult(209, "Multani"),
 
     /**
      * Old North Arabian [106]
@@ -620,6 +678,10 @@ public enum ScriptCode
      */
     Nbat(159, "Nabataean"),
 
+    /**
+     * Newa [333]
+     */
+    Newa(333, "Newa"),
 
     /**
      * Nakhi Geba [420]
@@ -662,6 +724,10 @@ public enum ScriptCode
      */
     Orya(327, "Oriya"),
 
+    /**
+     * Osage [219]
+     */
+    Osge(219, "Osage"),
 
     /**
      * Osmanya [260]
@@ -722,6 +788,10 @@ public enum ScriptCode
      */
     Prti(130, "Inscriptional Parthian"),
 
+    /**
+     * Hanifi Rohingya [167]
+     */
+    Rohg(167, "Hanifi Rohingya"),
 
     /**
      * Reserved for private use [900]
@@ -794,6 +864,10 @@ public enum ScriptCode
      */
     Shrd(319, "Sharada"),
 
+    /**
+     * Siddham [361]
+     */
+    Sidd(361, "Siddham"),
 
     /**
      * Khudawadi, Sindhi [318]
@@ -806,12 +880,25 @@ public enum ScriptCode
      */
     Sinh(348, "Sinhala"),
 
+    /**
+     * Sogdian [142]
+     */
+    Sogd(142, "Sogdian"),
+
+    /**
+     * Old Sogdian [329]
+     */
+    Sogo(329, "Old Sogdian"),
 
     /**
      * Sora Sompeng [398]
      */
     Sora(398, "Sora Sompeng"),
 
+    /**
+     * Soyombo [439]
+     */
+    Soym(439, "Soyombo"),
 
     /**
      * Sundanese [362]
@@ -833,6 +920,8 @@ public enum ScriptCode
 
     /**
      * Syriac [138]
+     *
+     * @deprecated {@link #Syrc}
      */
     Syre(138, "Syriac"),
 
@@ -942,7 +1031,7 @@ public enum ScriptCode
     /**
      * Ugaritic [040]
      */
-    Ugar(040, "Ugaritic"),
+    Ugar(40, "Ugaritic"),
 
 
     /**
@@ -972,13 +1061,13 @@ public enum ScriptCode
     /**
      * Old Persian [030]
      */
-    Xpeo(030, "Old Persian"),
+    Xpeo(30, "Old Persian"),
 
 
     /**
      * Cuneiform, Sumero-Akkadian [020]
      */
-    Xsux(020, "Cuneiform, Sumero-Akkadian"),
+    Xsux(20, "Cuneiform, Sumero-Akkadian"),
 
 
     /**
@@ -986,6 +1075,10 @@ public enum ScriptCode
      */
     Yiii(460, "Yi"),
 
+    /**
+     * Zanabazar Square [339]
+     */
+    Zanb(339, "Zanabazar Square"),
 
     /**
      * Code for inherited script [994]
@@ -1027,7 +1120,7 @@ public enum ScriptCode
     /**
      * Map to look up ScriptCode by numeric code.
      */
-    private static final Map<Integer, ScriptCode> numericMap = new HashMap<Integer, ScriptCode>();
+    private static final Map<Integer, ScriptCode> numericMap = new HashMap<>();
 
 
     static
@@ -1057,7 +1150,7 @@ public enum ScriptCode
     /**
      * Constructor.
      */
-    private ScriptCode(int numeric, String name)
+    ScriptCode(int numeric, String name)
     {
         this.numeric = numeric;
         this.name = name;
@@ -1205,7 +1298,7 @@ public enum ScriptCode
 
     private static String canonicalize(String code, boolean caseSensitive)
     {
-        if (code == null || code.length() == 0)
+        if (code == null || code.isEmpty())
         {
             return null;
         }
@@ -1226,7 +1319,7 @@ public enum ScriptCode
             // The first letter.
             if (i == 0)
             {
-                if (Character.isUpperCase(ch) == false)
+                if (!Character.isUpperCase(ch))
                 {
                     // Modification is needed.
                     sb = new StringBuilder();
@@ -1238,13 +1331,13 @@ public enum ScriptCode
             {
                 if (sb == null)
                 {
-                    if (Character.isLowerCase(ch) == false)
+                    if (!Character.isLowerCase(ch))
                     {
                         // Modification is needed.
                         sb = new StringBuilder();
 
                         // Copy all the previous letters so far.
-                        sb.append(code.substring(0, i));
+                        sb.append(code, 0, i);
 
                         // Lower the current letter.
                         sb.append(Character.toLowerCase(ch));
@@ -1346,7 +1439,7 @@ public enum ScriptCode
             throw new IllegalArgumentException("pattern is null.");
         }
 
-        List<ScriptCode> list = new ArrayList<ScriptCode>();
+        List<ScriptCode> list = new ArrayList<>();
 
         for (ScriptCode entry : values())
         {

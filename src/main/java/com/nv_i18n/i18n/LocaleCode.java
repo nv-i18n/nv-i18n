@@ -69,6 +69,7 @@ import java.util.Locale;
  * </pre>
  *
  */
+@SuppressWarnings("unused")
 public enum LocaleCode
 {
    /**
@@ -300,6 +301,13 @@ public enum LocaleCode
     en_GB(LanguageCode.en, CountryCode.GB),
 
     /**
+     * {@link LanguageCode#en English}, {@link CountryCode#GG Guernsey}
+     *
+     * @since 2.0
+     */
+    en_GG(LanguageCode.en, CountryCode.GG),
+
+    /**
      * {@link LanguageCode#en English}, {@link CountryCode#HK Hong Kong}
      *
      * @since 1.22
@@ -312,9 +320,23 @@ public enum LocaleCode
     en_IE(LanguageCode.en, CountryCode.IE),
 
     /**
+     * {@link LanguageCode#en English}, {@link CountryCode#IM Isle of Man}
+     *
+     * @since 2.0
+     */
+    en_IM(LanguageCode.en, CountryCode.IM),
+
+    /**
      * {@link LanguageCode#en English}, {@link CountryCode#IN India}
      */
     en_IN(LanguageCode.en, CountryCode.IN),
+
+    /**
+     * {@link LanguageCode#en English}, {@link CountryCode#JE Jersey}
+     *
+     * @since 2.0
+     */
+    en_JE(LanguageCode.en, CountryCode.JE),
 
     /**
      * {@link LanguageCode#en English}, {@link CountryCode#MT Malta}
@@ -996,7 +1018,7 @@ public enum LocaleCode
     private final String string;
 
 
-    private LocaleCode(LanguageCode language, CountryCode country)
+    LocaleCode(LanguageCode language, CountryCode country)
     {
         this.language = language;
         this.country = country;
@@ -1424,8 +1446,9 @@ public enum LocaleCode
         // a upper-case ISO 3166-1 alphe-2 code.
         String country = locale.getCountry();
 
-        if ((language == null || language.length() == 0) &&
-            (country  == null || country.length()  == 0))
+        //noinspection ConstantValue
+        if ((language == null || language.isEmpty()) &&
+            (country  == null || country.isEmpty()))
         {
             return LocaleCode.undefined;
         }
@@ -1570,7 +1593,7 @@ public enum LocaleCode
      */
     public static List<LocaleCode> getByLanguage(LanguageCode language)
     {
-        List<LocaleCode> list = new ArrayList<LocaleCode>();
+        List<LocaleCode> list = new ArrayList<>();
 
         if (language == null)
         {
@@ -1684,7 +1707,7 @@ public enum LocaleCode
      */
     public static List<LocaleCode> getByCountry(CountryCode country)
     {
-        List<LocaleCode> list = new ArrayList<LocaleCode>();
+        List<LocaleCode> list = new ArrayList<>();
 
         if (country == null)
         {
