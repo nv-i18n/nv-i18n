@@ -1925,11 +1925,11 @@ public enum CountryCode
     TP("East Timor", "TMP", 626, Assignment.TRANSITIONALLY_RESERVED),
 
     /**
-     * <a href="http://en.wikipedia.org/wiki/Turkey">Turkey</a>
+     * <a href="http://en.wikipedia.org/wiki/Turkey">Türkiye</a>
      * [<a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#TR">TR</a>, TUR, 792,
      * Officially assigned]
      */
-    TR("Turkey", "TUR", 792, Assignment.OFFICIALLY_ASSIGNED),
+    TR("Türkiye", "TUR", 792, Assignment.OFFICIALLY_ASSIGNED),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Trinidad_and_Tobago">Trinidad and Tobago</a>
@@ -2040,7 +2040,7 @@ public enum CountryCode
      * [<a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#VA">VA</a>, VAT, 336,
      * Officially assigned]
      */
-    VA("Holy See (Vatican City State)", "VAT", 336, Assignment.OFFICIALLY_ASSIGNED),
+    VA("Holy See", "VAT", 336, Assignment.OFFICIALLY_ASSIGNED),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines">Saint Vincent and the Grenadines</a>
