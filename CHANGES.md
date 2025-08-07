@@ -1,6 +1,34 @@
 CHANGES
 =======
 
+### 2.0 (2025-08-07)
+
+* Initial release of the fork based on https://github.com/TakahikoKawasaki/nv-i18n.
+* Updated Java compatibility: minimum required version is now Java 8 (up from Java 5) ([PR #12](https://github.com/pleo-io/nv-i18n/pull/12))
+* Updated country codes in `CountryCode.java` ([PR #14](https://github.com/pleo-io/nv-i18n/pull/14)):
+  - Updated names for existing codes: "Turkey" to "Türkiye", "Holy See (Vatican City State)" to "Holy See".
+* Updated currency codes in `CurrencyCode.java` ([PR #4](https://github.com/pleo-io/nv-i18n/pull/4)):
+  - Added new codes: `SLE` (Leone, Sierra Leone), `UYW` (Unidad previsional, Uruguay), `VED` (Venezuelan digital bolívar), `XAD` (Arab Accounting Dinar, fund), `XCG` (Caribbean guilder), `ZWG` (Zimbabwe Gold).
+  - Updated `EUR` to include Croatia (`HR`) as a Eurozone country.
+  - Marked `HRK` (Croatian Kuna), `SLL` (old Leone), `ZWL` (Zimbabwe Dollar), `ANG` (Netherlands Antillean Guilder), `CUC` (Peso Convertible), `USS` (US Dollar Same day) as deprecated, with references to their replacements.
+* Marked `bh` (Bihari) in `LanguageCode` as deprecated, clarifying it is a group of languages, not a single language ([PR #14](https://github.com/pleo-io/nv-i18n/pull/14)).
+* Added new locale codes to `LocaleCode`: `en_GG` (English, Guernsey), `en_IM` (English, Isle of Man), and `en_JE` (English, Jersey) ([PR #14](https://github.com/pleo-io/nv-i18n/pull/14)).
+* Added new language codes to `LanguageAlpha3Code`: `cnr` (Montenegrin), `zgh` (Standard Moroccan Tamazight) ([PR #14](https://github.com/pleo-io/nv-i18n/pull/14)).
+* Added new script codes to `ScriptCode` ([PR #14](https://github.com/pleo-io/nv-i18n/pull/14)):
+  - `Adlm` (Adlam), `Ahom` (Ahom), `Dogr` (Dogra), `Elym` (Elymaic), `Gonm` (Masaram Gondi), `Gunj` (Gunjala Gondi), `Hanb` (Han with Bopomofo), `Hatr` (Hatran), `Maka` (Makasar), `Marc` (Marchen), `Medf` (Medefaidrin), `Modi` (Modi), `Mult` (Multani), `Newa` (Newa), `Osge` (Osage), `Rohg` (Hanifi Rohingya), `Sidd` (Siddham), `Sogd` (Sogdian), `Sogo` (Old Sogdian), `Soym` (Soyombo), `Zanb` (Zanabazar Square).
+* Fixed numeric codes for several scripts in `ScriptCode` ([PR #14](https://github.com/pleo-io/nv-i18n/pull/14)):
+  - `Egyd` (Egyptian demotic): `070` → `70`
+  - `Egyh` (Egyptian hieratic): `060` → `60`
+  - `Egyp` (Egyptian hieroglyphs): `050` → `50`
+  - `Ugar` (Ugaritic): `040` → `40`
+  - `Xpeo` (Old Persian): `030` → `30`
+  - `Xsux` (Cuneiform, Sumero-Akkadian): `020` → `20`
+* Deprecated the following script codes in favor of their canonical forms ([PR #14](https://github.com/pleo-io/nv-i18n/pull/14)):
+  - `Cyrs` (Cyrillic) → use `Cyrl`
+  - `Latf` (Latin) → use `Latn`
+  - `Syre` (Syriac) → use `Syrc`
+
+
 ### 1.29 (2021-08-26)
 
 * Added `XU` (United Kingdom (excluding Northern Ireland)) to CountryCode
@@ -196,3 +224,5 @@ CHANGES
   - Changed the behavior of `getByLanguage(String)`. In older versions,
     it was an alias of `getByLanguage(String, false)`, but now it is
     an alias of `getByLanguage(String, true)`.
+
+* Updated Java source and target compatibility in `pom.xml` from 1.5 to 1.8 ([commit 7a4020c](https://github.com/pleo-io/nv-i18n/commit/7a4020c)).

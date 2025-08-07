@@ -35,7 +35,7 @@ Maven
 <dependency>
     <groupId>com.nv_i18n</groupId>
     <artifactId>nv-i18n</artifactId>
-    <version>1.29</version>
+    <version>2.0</version>
 </dependency>
 ```
 
@@ -54,7 +54,7 @@ OSGi
 ----
 
     Bundle-SymbolicName: com.nv_i18n.i18n
-    Export-Package: com.nv_i18n.i18n;version="1.28.0"
+    Export-Package: com.nv_i18n.i18n;version="2.0.0"
 
 
 Source Code
@@ -121,13 +121,6 @@ See Also
 * Language Alpha3 Code [ISO 639-2](http://en.wikipedia.org/wiki/ISO_639-2)
 * Script Code [ISO 15924](http://en.wikipedia.org/wiki/ISO_15924)
 * Currency Code [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)
-
-
-TODO
-----
-
-* To add missing entries to CountryCode.
-* To add international telephone dial number.
 
 
 Note
