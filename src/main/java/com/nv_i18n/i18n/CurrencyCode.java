@@ -44,6 +44,7 @@ import java.util.regex.Pattern;
  * @see <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>
  *
  */
+@SuppressWarnings("unused")
 public enum CurrencyCode
 {
     /**
@@ -115,7 +116,7 @@ public enum CurrencyCode
      *
      * @see #XCG
      *
-     * @deprecated
+     * @deprecated Since 2.0, replaced by {@link #XCG}.
      */
     ANG("Netherlands Antillean Guilder", 532, 2, CountryCode.CW, CountryCode.SX),
 
@@ -382,6 +383,7 @@ public enum CurrencyCode
      *
      * @deprecated
      */
+    @SuppressWarnings("DeprecatedIsStillUsed")
     BYR("Belarusian Ruble", 974, 0, CountryCode.BY),
 
     /**
@@ -556,7 +558,7 @@ public enum CurrencyCode
      *
      * @see #CUP
      *
-     * @deprecated
+     * @deprecated Since 2.0, replaced by {@link #CUP}.
      */
     CUC("Peso Convertible", 931, 2, CountryCode.CU),
 
@@ -876,7 +878,7 @@ public enum CurrencyCode
      *
      * @see #EUR
      *
-     * @deprecated
+     * @deprecated Since 2.0, replaced by {@link #EUR} as the official currency of Croatia.
      */
     HRK("Croatian Kuna", 191, 2, CountryCode.HR),
 
@@ -1604,7 +1606,7 @@ public enum CurrencyCode
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Russian_ruble">Russian Ruble</a>
-     * before the 1998 redenomination (1 {@link #RUB} = 1,000 {@link #RUR}).
+     * before the 1998 redenomination (1 {@link #RUB} = 1,000 {@link #RUB}).
      * [numeric code = 810, minor unit = 2]
      *
      * <p>Used by:</p>
@@ -1618,7 +1620,7 @@ public enum CurrencyCode
      *
      * @deprecated
      */
-    RUR("Russian Ruble", 810, 2, CountryCode.RU),
+    @SuppressWarnings("DeprecatedIsStillUsed") RUR("Russian Ruble", 810, 2, CountryCode.RU),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Rwandan_franc">Rwanda Franc</a>
@@ -1716,6 +1718,9 @@ public enum CurrencyCode
      * <ul>
      *     <li>{@link CountryCode#SL SL}: SIERRA LEONE
      * </ul>
+     *
+     *
+     * @since 2.0
      */
     SLE("Leone", 925, 2),
 
@@ -1730,7 +1735,7 @@ public enum CurrencyCode
      *
      * @see #SLE
      *
-     * @deprecated
+     * @deprecated Since 2.0, replaced by {@link #SLE}.</p>
      */
     SLL("Leone", 694, 2, CountryCode.SL),
 
@@ -1905,6 +1910,7 @@ public enum CurrencyCode
      * <li>{@link CountryCode#TO TO}: TONGA
      * </ul>
      */
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
     TOP("Pa\u02BBanga", 776, 2, CountryCode.TO),
 
     /**
@@ -2035,8 +2041,9 @@ public enum CurrencyCode
      * <li>{@link CountryCode#US US}: UNITED STATES
      * </ul>
      *
-     * @deprecated
+     * @deprecated Since 2.0.
      */
+    @SuppressWarnings("DeprecatedIsStillUsed")
     USS("US Dollar (Same day)", 998, 2, CountryCode.US)
     {
         @Override
@@ -2083,6 +2090,8 @@ public enum CurrencyCode
      * <ul>
      * <li>{@link CountryCode#UY UY}: URUGUAY</li>
      * </ul>
+     *
+     * @since 2.0
      */
     UYW("Unidad previsional", 927, 4, CountryCode.UY)
     {
@@ -2109,6 +2118,8 @@ public enum CurrencyCode
      * <ul>
      * <li>{@link CountryCode#VE VE}: VENEZUELA, BOLIVARIAN REPUBLIC OF</li>
      * </ul>
+     *
+     * @since 2.0
      */
     VED("Bolívar Soberano", 926, 2, CountryCode.VE),
 
@@ -2180,6 +2191,8 @@ public enum CurrencyCode
      * <p>Used by:</p>
      * <ul>
      * </ul>
+     *
+     * @since 2.0
      */
     XAD("Arab Accounting Dinar", 396, 2)
     {
@@ -2292,6 +2305,8 @@ public enum CurrencyCode
      * <li>{@link CountryCode#CW CW}: CURA&Ccedil;AO</li>
      * <li>{@link CountryCode#SX SX}: SINT MAARTEN (DUTCH PART)</li>
      * </ul>
+     *
+     * @since 2.0
      */
     XCG("Caribbean guilder", 532, 2, CountryCode.CW, CountryCode.SX),
 
@@ -2430,6 +2445,8 @@ public enum CurrencyCode
      * <ul>
      * <li>{@link CountryCode#ZW ZW}: ZIMBABWE
      * </ul>
+     *
+     * @since 2.0
      */
     ZWG("Zimbabwe Gold", 924, 2, CountryCode.ZW),
 
@@ -2444,13 +2461,13 @@ public enum CurrencyCode
      *
      * @see #ZWG
      *
-     * @deprecated
+     * @deprecated Since 2.0, replaced by {@link #ZWG}.
      */
     ZWL("Zimbabwe Dollar", 932, 2, CountryCode.ZW),
     ;
 
 
-    private static final Map<Integer, CurrencyCode> numericMap = new HashMap<Integer, CurrencyCode>();
+    private static final Map<Integer, CurrencyCode> numericMap = new HashMap<>();
 
 
     static
@@ -2468,7 +2485,7 @@ public enum CurrencyCode
     private final List<CountryCode> countryList;
 
 
-    private CurrencyCode(String name, int numeric, int minorUnit, CountryCode... countries)
+    CurrencyCode(String name, int numeric, int minorUnit, CountryCode... countries)
     {
         this.name        = name;
         this.numeric     = numeric;
@@ -2733,7 +2750,7 @@ public enum CurrencyCode
 
     private static String canonicalize(String code, boolean caseSensitive)
     {
-        if (code == null || code.length() == 0)
+        if (code == null || code.isEmpty())
         {
             return null;
         }
@@ -2843,7 +2860,7 @@ public enum CurrencyCode
      */
     public static List<CurrencyCode> getByCountry(CountryCode country)
     {
-        List<CurrencyCode> list = new ArrayList<CurrencyCode>();
+        List<CurrencyCode> list = new ArrayList<>();
 
         if (country == null)
         {
@@ -2944,7 +2961,7 @@ public enum CurrencyCode
             throw new IllegalArgumentException("pattern is null.");
         }
 
-        List<CurrencyCode> list = new ArrayList<CurrencyCode>();
+        List<CurrencyCode> list = new ArrayList<>();
 
         for (CurrencyCode entry : values())
         {
