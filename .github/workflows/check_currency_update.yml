@@ -21,8 +21,10 @@ jobs:
       id: compare
       run: |
         if ! cmp -s latest-list-one.xml sources/iso4217/list-one.xml; then
+          echo "Files are different"
           echo "files_are_different=true" >> $GITHUB_ENV
         else
+          echo "Files are the same"
           echo "files_are_different=false" >> $GITHUB_ENV
         fi
 
