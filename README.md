@@ -33,7 +33,7 @@ Maven
 
 ```xml
 <dependency>
-    <groupId>com.nv_i18n</groupId>
+    <groupId>io.github.nv-i18n</groupId>
     <artifactId>nv-i18n</artifactId>
     <version>2.0</version>
 </dependency>
