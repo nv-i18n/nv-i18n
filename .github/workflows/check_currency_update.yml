@@ -1,0 +1,45 @@
+name: Check Currency Code Updates
+
+on:
+  schedule:
+    - cron: '0 1 * * 1' # Every Monday at 1am
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  check-currency-update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v5
+
+    - name: Download latest currency list
+      run: |
+        curl -o latest-list-one.xml https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml
+
+    - name: Compare files
+      id: compare
+      run: |
+        if ! cmp -s latest-list-one.xml sources/iso4217/list-one.xml; then
+          echo "Files are different"
+          echo "files_are_different=true" >> $GITHUB_ENV
+        else
+          echo "Files are the same"
+          echo "files_are_different=false" >> $GITHUB_ENV
+        fi
+
+    - name: Create Issue if files are different
+      if: env.files_are_different == 'true'
+      uses: dacbd/create-issue-action@v2
+      with:
+        token: ${{ github.token }}
+        title: "Currency Code List Updated"
+        labels: update
+        body: |
+          The [currency code list](https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml) has been updated. Please review the changes and update the repository accordingly.
+
+          Please follow these steps to update the currency codes in the repository:
+          - [ ] Download the updated file from the link above.
+          - [ ] Replace the existing `sources/iso4217/list-one.xml` file with the new file.
+          - [ ] Update the `CurrencyCode.java` file in `src/main/java/com/nv_i18n/i18n/` to reflect any changes in the currency codes.
+          - [ ] Commit the changes and push them to the repository.
