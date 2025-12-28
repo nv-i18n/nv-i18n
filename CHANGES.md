@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+### 2.1 (2025-12-28)
+
+* Deprecate Bulgarian `LEV` in favour of `EUR` for Bulgaria (`BG`)
+  ([Pull Request 19](https://github.com/nv-i18n/nv-i18n/pull/19)).
+
 ### 2.0 (2025-08-07)
 
 * Initial release of the fork based on https://github.com/TakahikoKawasaki/nv-i18n.
