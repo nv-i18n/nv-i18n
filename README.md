@@ -35,7 +35,7 @@ Maven
 <dependency>
     <groupId>io.github.nv-i18n</groupId>
     <artifactId>nv-i18n</artifactId>
-    <version>2.0</version>
+    <version>2.1</version>
 </dependency>
 ```
 
@@ -45,7 +45,7 @@ Gradle
 
 ```gradle
 dependencies {
-    compile 'com.nv_i18n:nv-i18n:1.28'
+    compile 'com.nv_i18n:nv-i18n:2.1'
 }
 ```
 
@@ -54,7 +54,7 @@ OSGi
 ----
 
     Bundle-SymbolicName: com.nv_i18n.i18n
-    Export-Package: com.nv_i18n.i18n;version="2.0.0"
+    Export-Package: com.nv_i18n.i18n;version="2.1.0"
 
 
 Source Code
