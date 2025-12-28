@@ -226,6 +226,7 @@ public enum CurrencyCode
      * <ul>
      * <li>{@link CountryCode#BG BG}: BULGARIA
      * </ul>
+     * @deprecated
      */
     BGN("Bulgarian Lev", 975, 2, CountryCode.BG),
 
@@ -684,6 +685,7 @@ public enum CurrencyCode
      * <li>{@link CountryCode#AT AT}: AUSTRIA
      * <li>{@link CountryCode#AX AX}: &Aring;LAND ISLANDS
      * <li>{@link CountryCode#BE BE}: BELGIUM
+     * <li>{@link CountryCode#BG BG}: BULGARIA
      * <li>{@link CountryCode#BL BL}: SAINT BARTH&Eacute;LEMY
      * <li>{@link CountryCode#CY CY}: CYPRUS
      * <li>{@link CountryCode#DE DE}: GERMANY
@@ -721,15 +723,15 @@ public enum CurrencyCode
      */
     EUR("Euro", 978, 2,
         CountryCode.AD, CountryCode.AT, CountryCode.AX, CountryCode.BE,
-        CountryCode.BL, CountryCode.CY, CountryCode.DE, CountryCode.EE,
-        CountryCode.ES, CountryCode.EU, CountryCode.FI, CountryCode.FR,
-        CountryCode.GF, CountryCode.GP, CountryCode.GR, CountryCode.HR,
-        CountryCode.IE, CountryCode.IT, CountryCode.LT, CountryCode.LU,
-        CountryCode.LV, CountryCode.MC, CountryCode.ME, CountryCode.MF,
-        CountryCode.MQ, CountryCode.MT, CountryCode.NL, CountryCode.PM,
-        CountryCode.PT, CountryCode.RE, CountryCode.SI, CountryCode.SK,
-        CountryCode.SM, CountryCode.TF, CountryCode.VA, CountryCode.XK,
-        CountryCode.YT),
+        CountryCode.BG, CountryCode.BL, CountryCode.CY, CountryCode.DE,
+        CountryCode.EE, CountryCode.ES, CountryCode.EU, CountryCode.FI,
+        CountryCode.FR, CountryCode.GF, CountryCode.GP, CountryCode.GR,
+        CountryCode.HR, CountryCode.IE, CountryCode.IT, CountryCode.LT,
+        CountryCode.LU, CountryCode.LV, CountryCode.MC, CountryCode.ME,
+        CountryCode.MF, CountryCode.MQ, CountryCode.MT, CountryCode.NL,
+        CountryCode.PM, CountryCode.PT, CountryCode.RE, CountryCode.SI,
+        CountryCode.SK, CountryCode.SM, CountryCode.TF, CountryCode.VA,
+        CountryCode.XK, CountryCode.YT),
 
     /**
      * <a href="http://en.wikipedia.org/wiki/Fiji_dollar">Fiji Dollar</a>
