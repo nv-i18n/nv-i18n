@@ -4,7 +4,7 @@
 
     <groupId>io.github.nv-i18n</groupId>
     <artifactId>nv-i18n</artifactId>
-    <version>2.1-SNAPSHOT</version>
+    <version>2.1</version>
     <packaging>bundle</packaging>
     <name>nv-i18n Internationalization Package</name>
     <description>Package to support internationalization</description>
@@ -16,6 +16,16 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
+
+    <developers>
+        <developer>
+            <id>erwinw</id> <name>Erwin Wessels</name>
+            <email>erwin@pleo.io</email>
+            <url>https://github.com/erwinw</url> <roles>
+            <role>Developer</role>
+        </roles>
+            <timezone>+1</timezone> </developer>
+    </developers>
 
     <scm>
         <connection>scm:git:git@github.com:nv-i18n/nv-i18n.git</connection>
