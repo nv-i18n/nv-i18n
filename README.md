@@ -27,6 +27,11 @@ License
 
   Apache License, Version 2.0
 
+Maintainers information
+-----------
+
+See [MAINTAINERS.md](MAINTAINERS.md)
+
 
 Maven
 -----
