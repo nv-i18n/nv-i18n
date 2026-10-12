@@ -1,10 +1,7 @@
-nv-i18n
+nv-i18n <a href="CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a>
 =======
 
-<p align=center>
-<a href="CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a>
-</p>
-
+See also [`foundationsedge/nv-i18n`](https://github.com/foundationsedge/nv-i18n) for a similar and active fork of the original repo (see [#252](https://github.com/foundationsedge/nv-i18n/issues/252)).
 
 Overview
 --------
